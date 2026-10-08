@@ -1,0 +1,26 @@
+{
+  "name": "bootcamp_ejemplo",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto Javascript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "servor src/ index.html 1234 --reload"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.9.1",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.9.1",
+  "type": "module",
+  "devDependencies": {
+    "oxfmt": "^0.72.0",
+    "oxlint": "^1.87.0",
+    "servor": "^4.0.2"
+  }
+}
