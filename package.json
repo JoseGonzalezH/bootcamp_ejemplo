@@ -2,13 +2,21 @@
   "name": "bootcamp_ejemplo",
   "version": "1.0.0",
   "description": "Mi primer proyecto Javascript",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "servor src/ index.html 1234 --reload"
+    "dev": "servor src/ index.html 1234 --reload",
+    "deploy": "gh-pages -d src/"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "oxfmt": "^0.72.0",
+    "oxlint": "^1.87.0",
+    "servor": "^4.0.2"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -16,11 +24,5 @@
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@12.9.1",
-  "type": "module",
-  "devDependencies": {
-    "oxfmt": "^0.72.0",
-    "oxlint": "^1.87.0",
-    "servor": "^4.0.2"
-  }
+  "packageManager": "pnpm@12.9.1"
 }
